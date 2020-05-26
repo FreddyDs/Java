@@ -1,0 +1,26 @@
+/*
+Write a method set that accepts an index and a value and sets the list's element at that index to have the given value. You may assume that the index is between 0 (inclusive) and the size of the list (exclusive).
+
+Assume that you are adding this method to the LinkedIntList class as defined below:
+
+public class LinkedIntList {
+    private ListNode front;   // null for an empty list
+    ...
+}
+
+*/
+
+
+
+//CODE STARTS HERE
+public void set(int index, int value){
+    int size = 0;
+    ListNode current = front;    
+    while(size != index){
+
+        current = current.next;
+        size ++;
+
+    }
+    current.data = value;
+}
